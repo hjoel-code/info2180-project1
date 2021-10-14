@@ -114,20 +114,28 @@ header .container nav ul li a:hover {
     padding-right: 0 60px;
 }
 
+.cta .btn {
+    background: #48bb78;
+    color: white;
+    margin: 50px;
+    text-decoration: none;
+} 
 
 .btn {
     padding: 10px 25px;
     white-space: nowrap;
     border-radius: 5px;
     border: none;
+    transition: .05s;
 }
 
-.cta .btn {
-    background: #48bb78;
-    color: white;
-    margin: 50px;
-    text-decoration: none;
+.btn:hover {
+    transform: scale(1.005);
+    cursor: pointer;
+
 }
+
+
 
 .cta {
     margin: 0 50px;
@@ -187,6 +195,13 @@ button.btn {
     background: #5A67D8;
     color: white;
     margin: 10px;
+}
+
+.message p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
 }
 
 
