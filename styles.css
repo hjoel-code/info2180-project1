@@ -1,13 +1,18 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+}
+
+h1, h2, h3, p, a, .btn {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    padding: 0 10px;
 }
 
 header .container {
@@ -18,11 +23,23 @@ header .container {
 
 header .container nav ul li {
     display: inline;
+    padding: 0 8px;
+}
+
+header .container nav ul li a {
+    color: #6b7280;
+    transition: .5s;
+    text-decoration: none;
+}
+
+header .container nav ul li a:hover {
+    color: #5A67D8;
 }
 
 
 .overview-hero {
-    background: grey;
+    background: #E2E8F0;
+    padding: 8vh 0;
 }
 
 .overview-hero .container {
@@ -40,19 +57,28 @@ header .container nav ul li {
 }
 
 
+.learn-about {
+    padding: 5vh 0;
+}
+
+.learn-about .container h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
 
 .cards {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: fit-content;
-    grid-gap: 20px;
+    grid-gap: 40px;
     justify-content: center;
 }
 
 .card {
-    border-radius: 2px;
-    background: whitesmoke;
-    box-shadow: 0in;
+    border-radius: 5px;
+    border-color: #E2E8F0;
+    box-shadow: -4px 8px 11px -6px rgba(0,0,0,0.75);;
     min-height: fit-content;
 }
 
@@ -64,6 +90,17 @@ header .container nav ul li {
     padding: 8px;
 }
 
+.card-body h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+
+.testing {
+    background: #4a5568;
+    color: white;
+    padding: 10vh 0;
+}
 
 
 .testing .container {
@@ -79,30 +116,87 @@ header .container nav ul li {
 
 
 .btn {
-    padding: 15px 30px;
+    padding: 10px 25px;
     white-space: nowrap;
+    border-radius: 5px;
+    border: none;
 }
 
-.cta.btn {
-    background: rgb(56, 90, 4);
+.cta .btn {
+    background: #48bb78;
     color: white;
-    border-radius: 5px;
     margin: 50px;
+    text-decoration: none;
 }
 
 .cta {
     margin: 0 50px;
 }
 
-
+.stories {
+    padding: 3vh 0;
+}
 
 .stories .container article {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 40px 0;
 }
 
 
 .stories .container article img {
-    max-width: 110px;
-    border-radius: 50px;
+    max-width: 180px;
+    border-radius: 50%;
+    padding: 10px 40px;
 }
+
+.stories .container h2, .article-body p a {
+    color: #5a67d8;
+    text-decoration: none;
+}
+
+.article-body p a:hover {
+    text-decoration: underline;
+}
+
+
+.newsletter {
+    background: #48bb78;
+    color: white;
+    padding: 8vh 0;
+}
+
+.newsletter .container h3, .newsletter .container p {
+    text-align: center;
+}
+
+.newsletter .container form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input {
+    margin: 10px 0;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+button.btn {
+    background: #5A67D8;
+    color: white;
+    margin: 10px;
+}
+
+
+footer {
+    background: #4a5568;
+    color: white;
+}
+
+footer .container {
+    padding: 10px 60px;
+}
+
+
