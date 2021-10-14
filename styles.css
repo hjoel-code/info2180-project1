@@ -9,3 +9,100 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav ul li {
+    display: inline;
+}
+
+
+.overview-hero {
+    background: grey;
+}
+
+.overview-hero .container {
+    display: flex;
+    justify-content: center;
+}
+
+.overview-hero .container .overview-hero-image {
+    padding: 20px;
+}
+
+.overview-hero .container .overview-hero-image img {
+    max-width: 270px;
+    height: auto;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: fit-content;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 2px;
+    background: whitesmoke;
+    box-shadow: 0in;
+    min-height: fit-content;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 8px;
+}
+
+
+
+.testing .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing-desciption {
+    float: left;
+    padding-right: 0 60px;
+}
+
+
+.btn {
+    padding: 15px 30px;
+    white-space: nowrap;
+}
+
+.cta.btn {
+    background: rgb(56, 90, 4);
+    color: white;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.cta {
+    margin: 0 50px;
+}
+
+
+
+.stories .container article {
+    display: flex;
+    justify-content: center;
+}
+
+
+.stories .container article img {
+    max-width: 110px;
+    border-radius: 50px;
+}
